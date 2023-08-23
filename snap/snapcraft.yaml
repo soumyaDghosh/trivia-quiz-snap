@@ -10,14 +10,14 @@ issues: https://github.com/Nokse22/trivia-quiz/issues
 contact: https://github.com/Nokse22/trivia-quiz
 architectures:
   - build-on: amd64
-  #- build-on: arm64
-  #- build-on: armhf
+  - build-on: arm64
+  - build-on: armhf
 
 parts:
   trivia-quiz:
     plugin: meson
     source: https://github.com/Nokse22/trivia-quiz.git
-    #source-tag: 'v0.1.1'
+    source-tag: 'v0.1.1'
     source-depth: 1
     parse-info: [ usr/share/metainfo/io.github.nokse22.triviaquiz.metainfo.xml ]
     build-packages:
