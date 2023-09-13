@@ -27,7 +27,7 @@ parts:
       - --prefix=/snap/trivia-quiz/current/usr
     override-build: |
       craftctl default
-      sed -e 's|Icon=io.github.nokse22.trivia-quiz|Icon=usr/share/icons/hicolor/scalable/apps/io.github.nokse22.trivia-quiz.svg|' -i $CRAFT_PART_INSTALL/usr/share/applications/io.github.nokse22.trivia-quiz.desktop
+      sed -e 's|Icon=io.github.nokse22.trivia-quiz|Icon=usr/share/icons/hicolor/scalable/apps/io.github.nokse22.trivia-quiz.svg|' -i $CRAFT_PART_INSTALL/snap/trivia-quiz/current/usr/share/applications/io.github.nokse22.trivia-quiz.desktop
       sed -e '1c#!/usr/bin/env python3' -i ${CRAFT_PART_INSTALL}/snap/trivia-quiz/current/usr/bin/trivia-quiz
       chmod +x $CRAFT_PART_INSTALL/snap/trivia-quiz/current/usr/bin/trivia-quiz
     organize:
