@@ -18,7 +18,7 @@ parts:
   trivia-quiz:
     plugin: meson
     source: https://github.com/Nokse22/trivia-quiz.git
-    source-tag: 'v0.2.0'
+    source-tag: 'v0.2.2'
     source-depth: 1
     parse-info: [ usr/share/metainfo/io.github.nokse22.trivia-quiz.metainfo.xml ]
     build-packages:
